@@ -6,6 +6,14 @@ Projektas prognozuoja **kitos valandos** PM2.5 koncentraciją (`PM2.5(t+1)`) pag
 
 Paruošta ir patikrinta su **Python 3.13.2** (64 bitų, Windows). Turėtų veikti ir su Python 3.11–3.13.
 
+## Duomenų atsisiuntimas
+
+Duomenys turi būti: `data/PRSA_data_2010.1.1-2014.12.31.csv`
+
+Jei failo nėra, atsisiųskite UCI rinkinį ir išarchyvuokite CSV į `data/`:
+- https://archive.ics.uci.edu/dataset/381/beijing+pm2+5+data
+- tiesioginis zip: https://archive.ics.uci.edu/static/public/381/beijing+pm2+5+data.zip
+
 ## Virtualios aplinkos sukūrimas ir aktyvavimas
 
 **Windows PowerShell:**
@@ -46,14 +54,6 @@ python -m pip install -r requirements.txt
 ```
 
 `requirements.txt` sąmoningai neįtraukia `jupyter`/JupyterLab meta-paketo (Windows su ilgu projekto keliu diegimas dažnai nutrūksta) — notebook paleidimui iš IDE užtenka `ipykernel` ir `nbconvert`.
-
-## Duomenų atsisiuntimas
-
-Duomenys turi būti: `data/PRSA_data_2010.1.1-2014.12.31.csv`
-
-Jei failo nėra, atsisiųskite UCI rinkinį ir išarchyvuokite CSV į `data/`:
-- https://archive.ics.uci.edu/dataset/381/beijing+pm2+5+data
-- tiesioginis zip: https://archive.ics.uci.edu/static/public/381/beijing+pm2+5+data.zip
 
 ## Notebook paleidimas
 
@@ -128,4 +128,3 @@ Egzaminas/
 
 ![Didžiausias test periodo pavojingas pikas su visų metodų prognozėmis](figures/dangerous_peak_episode.png)
 
-Didelių klaidų pavyzdžiai (top‑12 kiekvienam metodui) — `results/large_errors_<Metodas>.csv`.
