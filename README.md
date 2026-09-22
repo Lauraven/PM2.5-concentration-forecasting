@@ -1,4 +1,4 @@
-# Pekino PM2.5 valandinė prognozė
+# PM2.5 valandinė prognozė
 
 Projektas prognozuoja **kitos valandos** PM2.5 koncentraciją (`PM2.5(t+1)`) pagal UCI *Beijing PM2.5 Data* rinkinį. Viename Jupyter notebook faile: duomenų paruošimas, baseline metodai (Persistence, Seasonal Mean), MLP, LSTM, XGBoost, chronologinis rolling-origin vertinimas, abliacija, atsparumo eksperimentas, grafikai, išvados ir AI naudojimo žurnalas.
 
