@@ -130,4 +130,3 @@ Egzaminas/
 
 ![Didžiausias test periodo pavojingas pikas su visų metodų prognozėmis](figures/dangerous_peak_episode.png)
 
-Didelių klaidų pavyzdžiai (top‑12 kiekvienam metodui) — `results/large_errors_<Metodas>.csv`.
